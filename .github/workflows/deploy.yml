@@ -15,20 +15,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # We removed the 'cache' line that was causing the error
 
       - name: Install and Build
         run: |
           npm install
           npm run build
 
-      - name: Debug Folder 🔍
-        run: ls -R
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          force_orphan: true
           
