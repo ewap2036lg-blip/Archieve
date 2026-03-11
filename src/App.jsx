@@ -1241,11 +1241,24 @@ function ExportScreen({categories,allItems,setAllItems,projectName,setProjectNam
           Downloads each element as a <strong>.json file</strong>. Move them to your OneDrive folder to back up your survey data.
         </div>
 
-        {/* How it works steps */}
-        {[
-          {id:"1", t:"Tap "Download All Files" below"},
-          {n:"2", t:"Files save to your phone's Downloads folder"},
-          {n:"3", t:"Open OneDrive app â†’ upload the files to your survey folder"},
+          const steps = [
+    { 
+      id: "1", 
+      title: "Tap 'Download all files' below", 
+      icon: <Download className="w-5 h-5 text-blue-600" /> 
+    },
+    { 
+      id: "2", 
+      title: "Files save in your phone's 'Downloads' folder", 
+      icon: <Archive className="w-5 h-5 text-amber-600" /> 
+    },
+    { 
+      id: "3", 
+      title: "Open OneDrive app and upload the files to your survey folder", 
+      icon: <MapPin className="w-5 h-5 text-emerald-600" /> 
+    }
+  ];
+
         ].map(s=>(
           <div key={s.n} style={{display:"flex",gap:10,alignItems:"flex-start",marginBottom:10}}>
             <div style={{width:22,height:22,borderRadius:"50%",background:C.accent,color:C.white,
