@@ -1243,7 +1243,7 @@ function ExportScreen({categories,allItems,setAllItems,projectName,setProjectNam
 
         {/* How it works steps */}
         {[
-          {n:"1", t:"Tap "Download All Files" below"},
+          {id:"1", t:"Tap "Download All Files" below"},
           {n:"2", t:"Files save to your phone's Downloads folder"},
           {n:"3", t:"Open OneDrive app â†’ upload the files to your survey folder"},
         ].map(s=>(
