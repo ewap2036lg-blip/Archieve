@@ -1,0 +1,15 @@
+// src/data.js
+export const steps = [
+  { id: "1", title: "Tap 'Download all files' below", iconName: "Download" },
+  { id: "2", title: "Files save in your phone's 'Downloads' folder", iconName: "Archive" },
+  { id: "3", title: "Open OneDrive app and upload the files to your survey folder", iconName: "MapPin" }
+];
+
+export const inventoryData = [
+  { id: 1, name: "Public Art/Monuments", category: "Heritage", count: 42 },
+  { id: 2, name: "Religious Buildings", category: "Architecture", count: 18 },
+  { id: 3, name: "Civic Structures", category: "History", count: 25 },
+  { id: 4, name: "Natural Landmarks", category: "Environment", count: 12 }
+  // You can paste more of your data items here later!
+];
+
